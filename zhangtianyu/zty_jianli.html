@@ -1,0 +1,410 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<title>个人简历</title>
+	<style>
+			@page {
+				margin:0;
+				size:portrait; 
+			}
+			.k{
+				font-family: verdana;
+			}	
+			.content{
+				font-family: helvetica;	
+			}
+		*{
+			color: black;
+			font-size: 22px;
+			margin: 0;
+			padding: 0;
+			font-family: Monaco;
+		}
+		ul,li{
+			list-style: none;
+		}
+		a{
+			text-decoration:none;
+		}
+		body{
+		/*	<!--background-color: #E5E2DF;-->*/
+			display: block;
+			width: 1060px;
+			box-shadow: 0 0 1em #ddd;
+			margin: 0 auto;
+		}
+		h2{
+			color: #B41117;
+			text-align:center;	
+			font-size:42px;	
+			padding: 15px 0;
+		}
+		ul>li{
+			margin:10px;
+			margin-left: 30px;
+		}
+		ol>li{
+			margin:5px;
+			margin-left: 40px;
+		}
+		h3>small{
+			padding: 0 5px;
+			font-size: 0.8em;
+			color:#CCCCCC;
+		}
+		.title,.personal,.other,.project,.it{
+			margin: 10px auto;
+			font-size:32px;
+		}
+		.title{
+			width:100%;
+			height:95px;
+			margin:0px auto;
+		}
+		.personal{
+			width:960px; 
+		    height:280px;
+		}
+		.project{
+			width:960px;
+		    height:390px;
+		}
+		.it{
+			width:960px;
+		    height:220px;
+
+		}
+	   .other{
+	   		width:960px;
+		    height:430px;
+			
+	   }
+		.headCtrl{
+			color: #DB1921;
+			font-size: 28px;
+				border-bottom:1px solid #B41117;
+				padding-bottom:10px;
+			margin:10px;
+		}
+		.left,.right{
+			width:460px;	
+			display:inline-block;
+		}
+		.left,.wrapProject{
+			margin-left:20px;
+			
+		}
+		.wrapProject{
+			margin-left:20px;
+			
+			
+		}
+		.table{
+			text-align: center;
+			width: 80%;
+			margin-left: 25px;			
+			line-height: 3em;
+		}
+		.biaozhi{
+			text-align: right;
+		}
+		.nameLine{
+			text-align: left;
+		}
+		.smallTitle{
+			padding-left: 27px;
+		}
+		h3{
+			color: #DB1921;
+			font-size: 25px;
+		}
+		.time{
+			width: 500px;
+			color: #B41117;
+		}
+		.detail{
+			font-size: 22px;
+			padding-left: 66px;
+		}
+		.itemOne{
+			margin: 15px 0;
+		}
+		.de{
+			position: absolute;
+			display: block;
+			top:69px;
+			font-size: 24px;
+			font-weight: bolder;
+			width: 300px;
+			-webkit-transform:rotate(-25deg);
+		}
+		.footer{
+			position: relative;
+			width: 100%;
+			height: 0px;
+			border: 1px solid #B41117;
+		}
+		.footer1{
+			position: relative;
+			width: 100%;
+			height: 0px;
+			border: 1px solid #B41117;
+		}
+		.circle{
+			top:-12.5px;
+			left: 0;
+			right: 0;
+			position: absolute;
+			margin: 0 auto;
+			width: 25px;
+			height: 25px;
+			border-radius: 25px;
+			background-color: #B41117;
+			vertical-align: center;
+		}
+		#footer{
+			
+			position: relative;
+			top:20px;
+			left: 521px;	
+		}
+		#footer2{
+			background-color: rgb(18,53,85);
+			
+			position: relative;
+			width:20px;
+			left: 500px;
+		}
+		.circleDetail{
+			top: 0px;
+			bottom: 0px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			display: inline-block;
+			position: absolute;
+			width: 80px;
+			height: 80px;
+			border-radius: 50px;
+		}
+		.circleDetail span{
+			color: #E5E2DF;
+			position: absolute;
+			top:0;
+			bottom: 0;
+			width: 2.2em;
+			height: 1.4em;
+			margin: auto;
+			left: 0;
+			right: 0;
+		}
+		.tri-80{
+			position: absolute;
+			top:0;
+			left: 50%;
+			width: 0;
+			height: 0;
+			border-bottom: 70px solid rgb(227,230,195);
+			border-left: 70px solid transparent;
+		}
+		.tri-60{
+			position: absolute;
+			top:0;
+			left: 50%;
+			width: 65px;
+			height: 65px;
+			background-color: rgb(227,230,195);
+		}
+		.tri-over{
+			position: absolute;
+			top:50%;
+			left: 50%;
+			width: 0;
+			height: 0;
+			border-top: 90px solid rgb(227,230,195);
+			border-right: 90px solid transparent;
+			border-left: 45px solid transparent;
+		}
+		.tri-20{
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 50%;
+			height: 100%;
+			background-color: rgb(227,230,195)
+		}
+		.wrapcircle{
+			overflow: hidden;
+			background-color: rgb(230,180,80);				
+			position: absolute;
+			width: 120px;
+			height: 120px;
+			border-radius: 60px;
+		}
+		.tri-sm{
+			position: absolute;
+			width:0;
+			height: 0;
+			top: 50%;
+			border-bottom: 65px solid rgb(227,230,195);
+			border-left: 65px solid transparent;
+		}
+		.ite{
+			position: absolute;
+			top:130px;
+			padding-left: 26px;
+			color: #aaa;
+		}
+		.circleTo{
+			vertical-align: middle;
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			background-color: rgb(217,116,43);
+			border-radius: 24px;
+			margin: 0 20px;
+			
+		}
+		.wrapProject ul>li{
+			line-height: 50px;
+			
+		}
+		.wrapProject ul>li span{
+			font-size:20px;
+			
+		}
+		
+		.item-time{
+			display: inline-block;
+			width: 150px;
+		}
+	</style>	
+	</head>
+	<body>
+		<div class='title'>
+		
+		<h2 class='titlefont'>个人简历</h2>
+		<div  class='footer'><div class='circle'></div></div>
+		</div>
+
+		<div class='personal'>
+			<p class='titlefont headCtrl'>■  个人简介</p>
+			<div class='left en'>
+				<ul style='line-height:2em'>	
+				<li ><img src='me.jpg' style='vertical-align:middle;width:100px;height:141px;margin-right:7px'>
+				
+<span style='display:block;height:144px;float:right;width:300px'>
+<pre>
+姓名：张恬钰  
+生日：1994.09.05
+民族：汉
+</pre></span></li>
+				<li><img src="4.png" style="vertical-align:middle;height:55px;width:55px;margin-left:10px;margin-right:10px">西安电子科技大学 通信工程学院</li>
+				
+			</ul>
+			</div >
+			<div class='right'>
+				<ul>
+					<li><img src='phone.png' style='vertical-align:middle;margin-left:12px;margin-right:6px'><span class='en'>18392146307</span></li>
+					<li><img src="mail.png" style='vertical-align:middle;width:60px;margin-left:6px;margin-right:2px;padding-top:3px;padding-bottom:3px;'><span class='en'>tianyu_zh@foxmail.com</span></li>
+					<li><img src="CSDN.png" style="width:50px;vertical-align:middle;margin-left:12px;margin-right:5px"><span class='en'>http://blog.csdn.net/u010466057</span></li>
+				</ul>	
+			</div>	
+		</div>
+		<div class='project'>
+		<p class='titlefont headCtrl'>■  项目经验</p>	
+			<div class='wrapProject en'style='line-height:1.5em'>
+				<div class='itemOne'>
+					<div class='itemOne'>
+					<h3 class='smallTitle'>「深圳市爱淘学网络有限公司-实习」<small>找家教o2o平台</small></h3>
+					<p class='detail'>简介:参与实现教育信息分享的O2O平台</p>
+					<p class='detail'>负责: 完成部分前端工作以及竞品分析中业务流程分析</p>
+				</div>
+					<h3 class='smallTitle'>「微客工作室-团队开发」<small>Android</small></h3>
+					<p class='detail'>简介:参与coschat APP 基于角色扮演的聊天应用</p>
+					<p class='detail'>负责:app功能介绍部分页面的实现</p>
+				</div>
+				<!--/*<div class='itemOne'>
+					<h3 class='smallTitle'>「pal工作室实习-团队开发」<small>基础项目开发</small></h3>
+					<p class='detail'>简介:参与功能较为完善的书架系统</p>
+					<p class='detail'>负责: 总体规划,页面的实现及JS交互</p>
+				</div>*/-->
+				<div class='itemOne'>	
+					<h3 class='smallTitle'>「移动端web相册及HTML5开发的在线画图工具」<small>webApp</small></h3>
+					<p class='detail'>简介:实现基础功能的作品</p>
+					<p class='detail'>负责:作品的开发和完善</p>
+				</div>
+				
+				
+			</div>
+		</div>
+		<div class='it'>
+		<p class='titlefont headCtrl'>■  专业技能</p>
+			<div class='wrapProject'style='line-height:1.5em;position:relative'>
+				<div class='wrapcircle' style="left:25px;">
+					<div class='tri-80'>
+					</div>
+					<div class='circleDetail' style="background-color:rgb(217,116,43)"><span style="width:4em;font-size:20px;">HTML/CSS</span></div>	
+				</div>
+				<div class='wrapcircle' style="left:210px;background-color:rgb(178,200,187)">
+						<div class='tri-80'>
+					</div>
+					<div class='circleDetail' style="background-color:rgb(69,137,148);"><span style="width:5em;font-size:18px;">JS/jQuery</span></div>	
+				</div>
+				<div class='wrapcircle' style="left:395px;background-color:rgb(160,191,124)">
+					<div class='tri-80'>
+					</div>
+					<div class='circleDetail' style="background-color:rgb(101,147,74)"><span style="width:2em">JAVA</span></div>	
+				</div>
+				<div class='wrapcircle' style="left:580px;background-color:rgb(137,157,192)">
+					<div class='tri-60'>
+					</div>
+					<div class='tri-over'>
+					</div>
+					<div class='circleDetail' style="background-color:rgb(114,111,128)"><span style="width:2em;">C/C++</span></div>	
+				</div>
+				<div class='wrapcircle' style="left:765px;background-color:rgb(252,157,154)">
+					<div class='tri-20'>
+					</div>
+					<div class='tri-sm'></div>
+			
+					<div class='circleDetail' style="background-color:rgb(209,73,83)"><span style="width:3.2em">Other<d style="color:#E5E2DF;vertical-align:super">*</d></span></div>	
+				</div>
+				<div class='ite'>
+						[*]:基本算法、数据结构、计算机网络
+					</div>	
+			</div>
+		</div>
+		<div class='other'>
+			<p class='titlefont headCtrl'>■  实践经历</p>
+			<div class='wrapProject' style=';display:inline-block;float:left;font-size:16px;'>
+				<ul>
+					<li><div class='circleTo' style='background-color:#FF9D9D'></div><span style='font-size:20px;' class='item-time'>2012-今</span><span style='font-size:20px;'>连续三年获得校奖学金</span></li>
+				
+					<li><div class='circleTo' style='background-color:#FF6262'></div><span class='item-time'>2013-今</span><span>担任班级团支书，获得“优秀共青团干部”称号</span></li>
+					<li><div class='circleTo' style='background-color:#FD0000'></div><span class='item-time'>2013</span><span>西安电子科技大学金工实习、电装实习</span></li>
+					
+					<li><div class='circleTo' style='background-color:#E30000'></div><span class='item-time'>2014</span><span>CET6英语六级通过，有较强的阅读和口语能力</span></li>
+					
+					<!--<li><div class='circleTo' style='background-color:#FF9224'></div><span class='item-time'>2014</span><span>西安电子科技大学 优秀共青团员</span></li>-->
+				
+					<li><div class='circleTo' style='background-color:#C80000'></div><span class='item-time'>2015</span><span>个人微信公共号“从零开始学前端”推文章</span></li>
+					
+				
+					<li><div class='circleTo' style='background-color:#B41117'></div><span class='item-time'>2015</span><span>微客工作室成员、PAL工作室成员，与团队一起成长</span></li>
+				</ul>
+			</div>
+			<div style='width:200px;height:380px;display:inline-block;float:right;'>
+			<div style='width:200px;height:200px;display:inline-block;margin-top:230px;'>
+			<!--<img  src="hw.png"style='width:120px;height:100px;margin-left:40px;margin-right:40px;'></img>-->
+			<!--<div style='width:175px;height:30px;padding-left:25px;padding-top:20px;display:inline-block;color:#B41117;font-size:16px'>期待与您一起共创未来</div>-->
+			</div>
+			</div>
+		
+		</div>
+		<div class='footer1'><div class='circle'></div></div>
+		<div style='width:100%;height:70px'></div>
+	</body>
+</html>
