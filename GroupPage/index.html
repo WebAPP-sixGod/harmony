@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>sexgod团队介绍</title>
+
+<style type="text/css">
+html {
+	overflow:hidden; 
+	-ms-touch-action:none;
+	-ms-content-zooming:none;
+}
+body {
+	position:absolute;
+	margin:0px;
+	padding:0px;
+	background:#fff;
+	width:100%;
+	height:100%;
+}
+h2 {
+    color: white;
+}
+p {
+    color: white;
+}
+.container {
+    background: url(imgs/background.jpg);
+}
+#mainHead {
+    padding-top: 150px;
+	margin: 0px 20% 0px 20%;
+}
+.ui.menu .item {
+    background-color: #2e2930!important;
+    height: 5%!important;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.column {
+	text-align: center;
+}
+a {
+    color: #e8e8e8!important;
+
+}
+.colorSection {
+    height: 10%;
+    background-color: none;
+}
+
+#canvas-container {
+	height: 600px;
+}
+#canvas {
+	position:inherit;
+	width:100%;
+	height:100%;
+	background:none;
+}
+.aboutUs {
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+h2 {
+    text-align: center;
+}
+.githubIcon {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 12px;
+}
+.footerStyle {
+    background-color: #2e2930;
+}
+</style>
+<! --- 使用semantic-ui框架 --- >
+<link rel="stylesheet" type="text/css" href="node_modules/semantic-ui/dist/semantic.min.css">
+<! --- 友好支持移动端必须加的一句话 --->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head> 
+<body>
+<div class="container">
+    <div id="mainHead">
+        <div id="nav-bar" class="navbar">
+            <div class="ui three item menu">
+                <a href="#canvas-container" class="active item"><i class="home icon"></i>成员介绍</a>
+                <a href="#about-us" class="item"><i class="users icon"></i>关于我们</a>
+                <a href="#contact" class="item"><i class="github alternate icon"></i>联系</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="color-section" class="colorSection"></div>
+
+    <div id="canvas-container" class="container">
+        <canvas id="canvas">你的浏览器不支持HTML5画布技术，请使用谷歌浏览器。</canvas>
+    </div>
+
+    <div id="colorSection" class="colorSection"></div>
+
+    <div id="about-us">
+        <div class="aboutUs">
+            <h2>关于我们</h2>
+            <p> 百度Web前端技术学院（Baidu Institute of Front-End Technology简称IFE）是一个
+                由百度人力资源部校园招聘组、百度EFE团队联合出品的、面向在校大学生以及对前端技术有
+                兴趣的前端在线学习平台，我们希望能够借助百度大量优秀的前端工程师以及丰富的前端知识
+                积累，帮助人们更加有趣、高效、系统地学习Web前端技术。
+            </p>
+            <P> 我们是sixGod，由不同的背景所组成的团队。</P>
+        </div>
+    </div>
+
+    <div id="contact">
+        <h2>联系我们</h2>
+        <a href="https://github.com/WebAPP-sixGod"><img class="githubIcon" src="imgs/github.png" alt="githubIcon"/></a>
+    </div>
+</div>
+
+
+<div class="footerStyle">
+    <div class="ui three column grid">
+        <div class="row">
+            <div class="column"></div>
+            <div class="column">
+                <a>Copyright &copy; sixGod 2015</a>
+            </div>
+            <div class="column"></div>
+        </div>
+    </div>
+</div>
+
+<! --- JavaScript文件 一般建议放在最下面 --->
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/semantic-ui/dist/semantic.min.js"></script>
+<script type="text/javascript" src="js/ge1doot.js"></script>
+<script type="text/javascript" src="js/imageTransform3D.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
