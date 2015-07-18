@@ -1,7 +1,7 @@
 # sixgod
 ##ife-warm-up 
 [队名缺省ing]WebAPP 热身任务  
-*  演示地址：http://webapp-sixgod.github.io/sixgod
+*  演示地址：http://webapp-sixgod.github.io/harmony
 
 ##任务时间  
  - 7月15日 至 7月17日  
